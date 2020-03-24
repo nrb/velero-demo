@@ -2,7 +2,7 @@ secretGenerator:
 - name: mysql-pass
   namespace: wordpress
   literals:
-  - password=afgw5lknyloiaa4rtOJP(rwlkSDf
+  - password=afgw5lknyloiaa4rtOJPrwlkSDf
 resources:
   - mysql-deployment.yaml
   - wordpress-deployment.yaml

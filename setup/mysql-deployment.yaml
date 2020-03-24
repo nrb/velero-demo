@@ -51,6 +51,8 @@ spec:
       labels:
         app: wordpress
         tier: mysql
+      annotations:
+        pre.hook.backup.velero.io/command: '["bash", "-c", "mysqldump -pafgw5lknyloiaa4rtOJPrwlkSDf --single-transaction --databases wordpress > /tmp/dump.sql"]'
     spec:
       containers:
       - image: mysql:5.6
